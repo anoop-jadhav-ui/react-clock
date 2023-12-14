@@ -1,0 +1,85 @@
+.container {
+  border: 8px solid lightgrey;
+  height: 300px;
+  width: 300px;
+
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minute {
+  position: absolute;
+  width: 4px;
+  height: 130px;
+  transform-origin: bottom;
+  transform: translateX(calc(-50% + 2px)) translateY(-50%) rotate(0deg);
+  background: lightpink;
+}
+
+.hour {
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  transform-origin: bottom;
+  transform: translateX(calc(-50% + 2px)) translateY(-50%) rotate(0deg);
+  background: lightpink;
+}
+
+.second {
+  position: absolute;
+  width: 2px;
+  height: 140px;
+
+  transform-origin: bottom;
+  transform: translateX(calc(-50% + 1px)) translateY(-50%) rotate(0deg);
+
+  background: grey;
+}
+
+.second::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: -6px;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background-color: grey;
+}
+
+.mark {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background-color: lightslategray;
+}
+
+.mark12 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mark6 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mark3 {
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.mark9 {
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%) rotate(90deg);
+}

@@ -1,0 +1,9 @@
+.container {
+  padding: 1rem;
+  border: 8px solid lightgrey;
+  border-radius: 1rem;
+
+  display: flex;
+  gap: 1rem;
+  width: 440px;
+}
